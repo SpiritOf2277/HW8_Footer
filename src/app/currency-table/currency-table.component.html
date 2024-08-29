@@ -1,0 +1,15 @@
+<table>
+    <thead>
+      <tr>
+        <th>Currency</th>
+        <th>Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let currency of currencies" [ngClass]="{'accent': isAccent(currency.code)}">
+        <td>{{ currency.code }}</td>
+        <td>{{ currency.rate }}</td>
+      </tr>
+    </tbody>
+</table>
+  
